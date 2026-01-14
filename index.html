@@ -3,84 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlazoApp - Gestiona tus citas de forma inteligente</title>
-    <meta name="description" content="PlazoApp automatiza la gestión de citas para asesores y profesionales. Sincroniza con Google Calendar y deja que la IA gestione tu agenda.">
+    <title>Plazo - Gestión de citas por email para asesorías fiscales</title>
+    <meta name="description" content="Plazo gestiona las solicitudes de cita que llegan por email a tu asesoría. Responde a tus clientes, coordina horarios y confirma reuniones automáticamente.">
+    <meta name="keywords" content="gestión citas asesoría fiscal, automatización citas email, software asesorías, agenda asesoría fiscal">
+    <link rel="canonical" href="https://plazo-app.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+    <link rel="icon" type="image/png" href="images/logo-plazo.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Plazo - Gestión de citas por email para asesorías fiscales">
+    <meta property="og:description" content="Plazo gestiona las solicitudes de cita que llegan por email a tu asesoría. Responde a tus clientes, coordina horarios y confirma reuniones automáticamente.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="/" class="logo">
-                <span class="logo-icon">📅</span>
-                <span class="logo-text">PlazoApp</span>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo" aria-label="Plazo - Inicio">
+                <picture>
+                    <source srcset="images/logo-plazo.webp" type="image/webp">
+                    <img src="images/logo-plazo.png" alt="Plazo" class="logo-img">
+                </picture>
             </a>
-            <a href="https://app.plazo-app.com" class="btn btn-primary">Acceder</a>
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#como-funciona" class="nav-link">Cómo funciona</a>
+                <a href="#para-asesorias" class="nav-link">Para asesorías</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <a href="#contacto" class="header-cta">Solicitar demo</a>
         </div>
-    </nav>
+    </header>
 
     <main>
+        <!-- Hero -->
         <section class="hero">
-            <div class="container">
-                <h1>Gestiona tus citas de forma inteligente</h1>
-                <p class="hero-subtitle">
-                    PlazoApp automatiza la gestión de citas para asesores y profesionales.
-                    Sincroniza con Google Calendar y deja que la IA organice tu agenda.
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://app.plazo-app.com" class="btn btn-primary btn-large">
-                        Acceder a la aplicación
-                    </a>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Tus clientes escriben pidiendo cita. Plazo les responde, propone horarios y confirma.</h1>
+                    <p class="hero-subtitle">Gestión de citas por email para asesorías fiscales. Sin intervención manual, sin cambiar cómo trabajas.</p>
+                    <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="images/hero-email.webp" type="image/webp">
+                        <img src="images/hero-email.png" alt="Flujo de Plazo: email de cliente solicitando cita, respuesta automática con horarios disponibles, cita confirmada en calendario" loading="eager">
+                    </picture>
                 </div>
             </div>
         </section>
 
-        <section class="features">
+        <!-- El Problema -->
+        <section class="section section-problem">
             <div class="container">
-                <h2>Funcionalidades principales</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🤖</div>
-                        <h3>IA que gestiona tu agenda</h3>
-                        <p>Responde emails automáticamente y reserva citas sin tu intervención.</p>
+                <div class="problem-content">
+                    <div class="problem-text">
+                        <h2>El email de tu asesoría está lleno de solicitudes de cita</h2>
+                        <p>Clientes que escriben para pedir hora. Hilos que se alargan con propuestas y contrapropuestas. Citas que se pierden entre otros emails. Horas de tu equipo dedicadas a coordinar agendas en lugar de atender clientes.</p>
+                        <p class="problem-solution">Plazo convierte ese caos en un sistema ordenado. Cada solicitud procesada, cada cita confirmada, cada cliente atendido.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📅</div>
-                        <h3>Sincronización con Google Calendar</h3>
-                        <p>Tus citas se sincronizan automáticamente con tu calendario de Google.</p>
+                    <div class="problem-image">
+                        <picture>
+                            <source srcset="images/inbox-comparacion.webp" type="image/webp">
+                            <img src="images/inbox-comparacion.png" alt="Comparación: bandeja de entrada caótica con múltiples hilos de coordinación de citas versus bandeja ordenada con citas confirmadas por Plazo" loading="lazy">
+                        </picture>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📧</div>
-                        <h3>Gestión de emails</h3>
-                        <p>Procesa solicitudes de cita recibidas por email de forma automática.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo Funciona -->
+        <section id="como-funciona" class="section section-how">
+            <div class="container">
+                <h2>Cómo funciona</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h3>El cliente escribe pidiendo cita</h3>
+                            <p>Un email normal a tu dirección de siempre. Sin formularios, sin enlaces externos, sin fricciones para el cliente.</p>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Disponibilidad en tiempo real</h3>
-                        <p>Los clientes solo ven los huecos disponibles actualizados al momento.</p>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h3>Plazo responde con horarios disponibles</h3>
+                            <p>Consulta la disponibilidad real de tu equipo y propone opciones. El cliente elige la que le viene bien.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h3>La cita aparece confirmada en tu calendario</h3>
+                            <p>Google Calendar actualizado, cliente notificado, sin correos adicionales que gestionar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Control Operativo -->
+        <section class="section section-control">
+            <div class="container">
+                <div class="control-content">
+                    <div class="control-text">
+                        <h2>Visibilidad completa de tu agenda</h2>
+                        <p>Cada cita tiene un estado claro: disponible, reservada provisionalmente o confirmada. Tu equipo sabe exactamente qué esperar cada día.</p>
+                        <p>Sin sorpresas, sin solapamientos, sin huecos que se olvidan.</p>
+                    </div>
+                    <div class="control-image">
+                        <picture>
+                            <source srcset="images/calendario-estados.webp" type="image/webp">
+                            <img src="images/calendario-estados.png" alt="Calendario semanal con citas en diferentes estados: disponible, reservado, confirmado" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para Asesorías -->
+        <section id="para-asesorias" class="section section-management">
+            <div class="container">
+                <div class="management-content">
+                    <div class="management-image">
+                        <picture>
+                            <source srcset="images/dashboard.webp" type="image/webp">
+                            <img src="images/dashboard.png" alt="Panel de gestión de Plazo mostrando ocupación del 72%, 42 citas esta semana y tasa de cancelación del 7%" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="management-text">
+                        <h2>Métricas de tu despacho en un vistazo</h2>
+                        <p>Ocupación de la agenda, citas de la semana, tasa de cancelación. Información para tomar decisiones sin rebuscar en hojas de cálculo.</p>
+                        <p>Un panel pensado para quien gestiona el despacho, no para quien gestiona tecnología.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integración -->
+        <section class="section section-integration">
+            <div class="container">
+                <h2>Encaja con lo que ya usas</h2>
+                <p class="section-intro">Sin cambiar herramientas, sin curva de aprendizaje, sin disrupciones.</p>
+                <ul class="integration-list">
+                    <li>
+                        <strong>Google Calendar</strong>
+                        <span>Sincronización bidireccional. Tus citas donde siempre las consultas.</span>
+                    </li>
+                    <li>
+                        <strong>Email como canal principal</strong>
+                        <span>Tus clientes siguen escribiendo a tu dirección de siempre.</span>
+                    </li>
+                    <li>
+                        <strong>Roles y permisos</strong>
+                        <span>Cada usuario ve y gestiona lo que le corresponde.</span>
+                    </li>
+                    <li>
+                        <strong>Soporte multidioma</strong>
+                        <span>Respuestas en el idioma de cada cliente.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seguridad -->
+        <section class="section section-security">
+            <div class="container">
+                <h2>Seguridad y cumplimiento</h2>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <h3>Cumplimiento RGPD</h3>
+                        <p>Tratamiento de datos conforme al Reglamento General de Protección de Datos. Derechos de acceso, rectificación y supresión garantizados.</p>
+                    </div>
+                    <div class="security-item">
+                        <h3>Infraestructura Google Cloud</h3>
+                        <p>Servicios alojados en infraestructura de Google Cloud Platform con certificaciones de seguridad enterprise.</p>
+                    </div>
+                    <div class="security-item">
+                        <h3>Control de acceso</h3>
+                        <p>Autenticación segura y permisos por rol. Cada usuario accede únicamente a la información que necesita.</p>
+                    </div>
+                    <div class="security-item">
+                        <h3>Tus datos, tu control</h3>
+                        <p>Plazo procesa solicitudes de cita, no accede a información fiscal de tus clientes ni a otros contenidos de tu email.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section section-contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>¿Quieres verlo en funcionamiento?</h2>
+                    <p>Escríbenos y coordinamos una demostración adaptada a cómo trabaja tu despacho.</p>
+                    <div class="contact-actions">
+                        <a href="mailto:hola@plazo-app.com?subject=Solicitud%20de%20demo%20de%20Plazo" class="btn btn-primary">Solicitar demo</a>
+                        <span class="contact-email">o escríbenos directamente a <a href="mailto:hola@plazo-app.com">hola@plazo-app.com</a></span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-icon">📅</span>
-                    <span class="logo-text">PlazoApp</span>
+                    <picture>
+                        <source srcset="images/logo-plazo.webp" type="image/webp">
+                        <img src="images/logo-plazo.png" alt="Plazo" class="footer-logo">
+                    </picture>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Enlaces legales">
                     <a href="/privacy.html">Política de Privacidad</a>
                     <a href="/terms.html">Términos de Servicio</a>
+                </nav>
+                <div class="footer-contact">
+                    <a href="mailto:hola@plazo-app.com">hola@plazo-app.com</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 PlazoApp. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Plazo. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

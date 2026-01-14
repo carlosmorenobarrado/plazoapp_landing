@@ -12,6 +12,9 @@ COPY styles.css /usr/share/nginx/html/
 COPY privacy.html /usr/share/nginx/html/
 COPY terms.html /usr/share/nginx/html/
 
+# Copy images
+COPY images/ /usr/share/nginx/html/images/
+
 # Expose port 8080 (Cloud Run requirement)
 EXPOSE 8080
 

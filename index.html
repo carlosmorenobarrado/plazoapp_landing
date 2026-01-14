@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plazo - Gestión de citas por email para asesorías fiscales</title>
-    <meta name="description" content="Plazo gestiona las solicitudes de cita que llegan por email a tu asesoría. Responde a tus clientes, coordina horarios y confirma reuniones automáticamente.">
-    <meta name="keywords" content="gestión citas asesoría fiscal, automatización citas email, software asesorías, agenda asesoría fiscal">
+    <title>Plazo - Gestión de citas por email para asesorías</title>
+    <meta name="description" content="Plazo gestiona las solicitudes de cita que llegan por email a tu asesoría. Responde, propone horarios y confirma automáticamente.">
     <link rel="canonical" href="https://plazo-app.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260114c">
     <link rel="icon" type="image/png" href="images/logo-plazo.png">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Plazo - Gestión de citas por email para asesorías fiscales">
-    <meta property="og:description" content="Plazo gestiona las solicitudes de cita que llegan por email a tu asesoría. Responde a tus clientes, coordina horarios y confirma reuniones automáticamente.">
+    <meta property="og:title" content="Plazo - Gestión de citas por email para asesorías">
+    <meta property="og:description" content="Automatiza la gestión de citas que llegan por email a tu asesoría.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
 </head>
@@ -39,205 +36,156 @@
     </header>
 
     <main>
-        <!-- Hero -->
+        <!-- HERO: Bloque dominante -->
         <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Tus clientes escriben pidiendo cita. Plazo les responde, propone horarios y confirma.</h1>
-                    <p class="hero-subtitle">Gestión de citas por email para asesorías fiscales. Sin intervención manual, sin cambiar cómo trabajas.</p>
-                    <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
-                </div>
-                <div class="hero-image">
-                    <picture>
-                        <source srcset="images/hero-email.webp" type="image/webp">
-                        <img src="images/hero-email.png" alt="Flujo de Plazo: email de cliente solicitando cita, respuesta automática con horarios disponibles, cita confirmada en calendario" loading="eager">
-                    </picture>
-                </div>
-            </div>
-        </section>
-
-        <!-- El Problema -->
-        <section class="section section-problem">
             <div class="container">
-                <div class="problem-content">
-                    <div class="problem-text">
-                        <span class="eyebrow">El problema</span>
-                        <h2>El email de tu asesoría está lleno de solicitudes de cita</h2>
-                        <p>Clientes que escriben para pedir hora. Hilos que se alargan con propuestas y contrapropuestas. Citas que se pierden entre otros emails. Horas de tu equipo dedicadas a coordinar agendas en lugar de atender clientes.</p>
-                        <p class="problem-solution">Plazo convierte ese caos en un sistema ordenado. Cada solicitud procesada, cada cita confirmada, cada cliente atendido.</p>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1>Gestión de citas por email, automática</h1>
+                        <p class="hero-subtitle">Plazo responde a tus clientes, propone horarios y confirma. Sin intervención manual.</p>
+                        <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
                     </div>
-                    <div class="problem-image">
+                    <div class="hero-image">
                         <picture>
-                            <source srcset="images/inbox-comparacion.webp" type="image/webp">
-                            <img src="images/inbox-comparacion.png" alt="Comparación: bandeja de entrada caótica con múltiples hilos de coordinación de citas versus bandeja ordenada con citas confirmadas por Plazo" loading="lazy">
+                            <source srcset="images/hero-email.webp" type="image/webp">
+                            <img src="images/hero-email.png" alt="Flujo de email automatizado con Plazo" loading="eager">
                         </picture>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Cómo Funciona -->
-        <section id="como-funciona" class="section section-how">
+        <!-- PROTAGONISTA: El problema -->
+        <section class="section-protagonist">
+            <div class="container">
+                <div class="block-protagonist">
+                    <div class="block-protagonist-text">
+                        <span class="eyebrow">El problema</span>
+                        <h2>Tu bandeja llena de solicitudes de cita</h2>
+                        <p>Clientes que escriben pidiendo hora. Hilos que se alargan con propuestas y contrapropuestas. Citas que se pierden.</p>
+                        <p class="highlight">Plazo convierte ese caos en un sistema ordenado.</p>
+                    </div>
+                    <div class="block-protagonist-image">
+                        <picture>
+                            <source srcset="images/inbox-comparacion.webp" type="image/webp">
+                            <img src="images/inbox-comparacion.png" alt="Bandeja ordenada con Plazo" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STANDARD: Cómo funciona -->
+        <section id="como-funciona" class="section-standard section-muted">
             <div class="container">
                 <div class="section-header">
                     <span class="eyebrow">Cómo funciona</span>
                     <h2>Tres pasos, sin complicaciones</h2>
                 </div>
-                <div class="steps">
-                    <div class="step">
-                        <span class="step-number">1</span>
-                        <div class="step-content">
-                            <h3>El cliente escribe pidiendo cita</h3>
-                            <p>Un email normal a tu dirección de siempre. Sin formularios, sin enlaces externos, sin fricciones.</p>
-                        </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-badge">1</span>
+                        <h3>El cliente escribe</h3>
+                        <p>Un email normal a tu dirección de siempre. Sin formularios ni enlaces externos.</p>
                     </div>
-                    <div class="step">
-                        <span class="step-number">2</span>
-                        <div class="step-content">
-                            <h3>Plazo responde con horarios</h3>
-                            <p>Consulta la disponibilidad real de tu equipo y propone opciones. El cliente elige.</p>
-                        </div>
+                    <div class="step-card">
+                        <span class="step-badge">2</span>
+                        <h3>Plazo responde</h3>
+                        <p>Consulta disponibilidad real y propone horarios. El cliente elige.</p>
                     </div>
-                    <div class="step">
-                        <span class="step-number">3</span>
-                        <div class="step-content">
-                            <h3>Cita confirmada en calendario</h3>
-                            <p>Google Calendar actualizado, cliente notificado, sin correos adicionales.</p>
-                        </div>
+                    <div class="step-card">
+                        <span class="step-badge">3</span>
+                        <h3>Cita confirmada</h3>
+                        <p>Google Calendar actualizado, cliente notificado. Sin correos adicionales.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Control Operativo -->
-        <section class="section section-control">
+        <!-- PAUSA: Control (statement potente) -->
+        <section class="section-breathe">
             <div class="container">
-                <div class="control-content">
-                    <div class="control-text">
-                        <span class="eyebrow">Control</span>
-                        <h2>Visibilidad completa de tu agenda</h2>
-                        <p>Cada cita tiene un estado claro: disponible, reservada provisionalmente o confirmada. Tu equipo sabe exactamente qué esperar cada día.</p>
-                        <p>Sin sorpresas, sin solapamientos, sin huecos que se olvidan.</p>
-                    </div>
-                    <div class="control-image">
-                        <picture>
-                            <source srcset="images/calendario-estados.webp" type="image/webp">
-                            <img src="images/calendario-estados.png" alt="Calendario semanal con citas en diferentes estados: disponible, reservado, confirmado" loading="lazy">
-                        </picture>
-                    </div>
+                <div class="block-statement">
+                    <h2>Cada cita en su sitio. Cada hueco visible.</h2>
+                    <p>Tu equipo sabe exactamente qué esperar cada día.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Para Asesorías -->
-        <section id="para-asesorias" class="section section-management">
+        <!-- STANDARD: Métricas -->
+        <section id="para-asesorias" class="section-standard section-muted">
             <div class="container">
-                <div class="management-content">
-                    <div class="management-image">
+                <div class="block-feature">
+                    <div class="block-feature-image">
                         <picture>
                             <source srcset="images/dashboard.webp" type="image/webp">
-                            <img src="images/dashboard.png" alt="Panel de gestión de Plazo mostrando ocupación del 72%, 42 citas esta semana y tasa de cancelación del 7%" loading="lazy">
+                            <img src="images/dashboard.png" alt="Panel de métricas de Plazo" loading="lazy">
                         </picture>
                     </div>
-                    <div class="management-text">
+                    <div class="block-feature-text">
                         <span class="eyebrow">Para asesorías</span>
                         <h2>Métricas de tu despacho en un vistazo</h2>
-                        <p>Ocupación de la agenda, citas de la semana, tasa de cancelación. Información para tomar decisiones sin rebuscar en hojas de cálculo.</p>
-                        <p>Un panel pensado para quien gestiona el despacho, no para quien gestiona tecnología.</p>
+                        <p>Ocupación de agenda, citas semanales, tasa de cancelación. Información para decidir sin rebuscar.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Integración -->
-        <section class="section section-integration">
+        <!-- MÓDULO: Integraciones -->
+        <section class="section-module">
             <div class="container">
-                <div class="section-header">
-                    <span class="eyebrow">Integraciones</span>
+                <div class="module-header">
                     <h2>Encaja con lo que ya usas</h2>
-                    <p class="section-intro">Sin cambiar herramientas, sin curva de aprendizaje, sin disrupciones.</p>
                 </div>
-                <div class="integration-grid">
-                    <div class="integration-card">
-                        <div class="integration-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        </div>
-                        <h3>Google Calendar</h3>
-                        <p>Sincronización bidireccional con tu calendario.</p>
+                <div class="module-row">
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>Google Calendar</span>
                     </div>
-                    <div class="integration-card">
-                        <div class="integration-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </div>
-                        <h3>Email</h3>
-                        <p>Tus clientes escriben a tu dirección de siempre.</p>
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>Tu email de siempre</span>
                     </div>
-                    <div class="integration-card">
-                        <div class="integration-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <h3>Roles y permisos</h3>
-                        <p>Cada usuario gestiona lo que le corresponde.</p>
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span>Roles y permisos</span>
                     </div>
-                    <div class="integration-card">
-                        <div class="integration-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        </div>
-                        <h3>Multidioma</h3>
-                        <p>Respuestas en el idioma de cada cliente.</p>
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span>Multidioma</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seguridad -->
-        <section class="section section-security">
+        <!-- MÓDULO: Seguridad -->
+        <section class="section-module">
             <div class="container">
-                <div class="section-header">
-                    <span class="eyebrow">Seguridad</span>
-                    <h2>Seguridad y cumplimiento</h2>
-                </div>
-                <div class="security-grid">
-                    <div class="security-card">
-                        <div class="security-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        </div>
-                        <h3>Cumplimiento RGPD</h3>
-                        <p>Tratamiento de datos conforme al reglamento. Derechos garantizados.</p>
+                <div class="module-row module-row-subtle">
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>Cumplimiento RGPD</span>
                     </div>
-                    <div class="security-card">
-                        <div class="security-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                        </div>
-                        <h3>Google Cloud</h3>
-                        <p>Infraestructura con certificaciones de seguridad enterprise.</p>
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <span>Google Cloud</span>
                     </div>
-                    <div class="security-card">
-                        <div class="security-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        </div>
-                        <h3>Control de acceso</h3>
-                        <p>Autenticación segura. Permisos por rol.</p>
-                    </div>
-                    <div class="security-card">
-                        <div class="security-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                        </div>
-                        <h3>Tus datos, tu control</h3>
-                        <p>Solo procesamos solicitudes de cita, nada más.</p>
+                    <div class="module-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Control de acceso</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contacto -->
-        <section id="contacto" class="section section-contact">
+        <!-- CONTACTO: Card premium -->
+        <section id="contacto" class="section-standard section-white">
             <div class="container">
-                <div class="contact-wrapper">
+                <div class="contact-card">
                     <div class="contact-header">
                         <span class="eyebrow">Contacto</span>
                         <h2>Solicitar demo</h2>
-                        <p>Completa el formulario y te enseñamos Plazo adaptado a tu despacho.</p>
+                        <p>Te enseñamos Plazo adaptado a tu despacho.</p>
                     </div>
                     <form class="contact-form" method="post" action="/contact">
                         <div class="form-row">
@@ -256,12 +204,12 @@
                                 <input type="text" id="despacho" name="despacho" required>
                             </div>
                             <div class="form-group">
-                                <label for="tamano">Tamaño del despacho</label>
+                                <label for="tamano">Tamaño</label>
                                 <select id="tamano" name="tamano" required>
                                     <option value="">Seleccionar</option>
                                     <option value="1-3">1–3 personas</option>
                                     <option value="4-10">4–10 personas</option>
-                                    <option value="10+">Más de 10 personas</option>
+                                    <option value="10+">Más de 10</option>
                                 </select>
                             </div>
                         </div>

@@ -59,7 +59,7 @@
     /* Layout */
     --container-max: 1100px;
     --text-max: 60ch;
-    --header-height: 64px;
+    --header-height: 88px;
 
     /* Effects */
     --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
@@ -158,7 +158,7 @@ p {
 }
 
 .logo-img {
-    height: 64px;
+    height: 88px;
     width: auto;
 }
 

@@ -187,7 +187,7 @@
                         <h2>Solicitar demo</h2>
                         <p>Te enseñamos Plazo adaptado a tu despacho.</p>
                     </div>
-                    <form class="contact-form" method="post" action="/contact">
+                    <form class="contact-form" id="contact-form">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="nombre">Nombre y apellidos</label>
@@ -217,8 +217,61 @@
                             <label for="comentario">Comentario <span class="optional">(opcional)</span></label>
                             <textarea id="comentario" name="comentario" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Solicitar demo</button>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Solicitar demo</button>
+                        <div id="form-message" class="form-message" style="display: none;"></div>
                     </form>
+
+                    <script>
+                    (function() {
+                        const FUNCTION_URL = 'https://europe-west1-plazo-infra.cloudfunctions.net/contact-form';
+                        const form = document.getElementById('contact-form');
+                        const submitBtn = document.getElementById('submit-btn');
+                        const formMessage = document.getElementById('form-message');
+
+                        form.addEventListener('submit', async function(e) {
+                            e.preventDefault();
+
+                            // Disable button and show loading
+                            submitBtn.disabled = true;
+                            submitBtn.textContent = 'Enviando...';
+                            formMessage.style.display = 'none';
+
+                            const formData = {
+                                nombre: document.getElementById('nombre').value,
+                                email: document.getElementById('email').value,
+                                despacho: document.getElementById('despacho').value,
+                                tamano: document.getElementById('tamano').value,
+                                comentario: document.getElementById('comentario').value
+                            };
+
+                            try {
+                                const response = await fetch(FUNCTION_URL, {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify(formData)
+                                });
+
+                                const result = await response.json();
+
+                                if (response.ok && result.success) {
+                                    formMessage.className = 'form-message form-success';
+                                    formMessage.textContent = '¡Solicitud enviada! Revisa tu email, te enviaremos opciones de horario.';
+                                    form.reset();
+                                } else {
+                                    formMessage.className = 'form-message form-error';
+                                    formMessage.textContent = result.error || 'Error al enviar. Por favor, inténtalo de nuevo.';
+                                }
+                            } catch (error) {
+                                formMessage.className = 'form-message form-error';
+                                formMessage.textContent = 'Error de conexión. Por favor, inténtalo de nuevo.';
+                            }
+
+                            formMessage.style.display = 'block';
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = 'Solicitar demo';
+                        });
+                    })();
+                    </script>
                 </div>
             </div>
         </section>
